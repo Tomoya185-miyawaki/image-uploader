@@ -3,4 +3,4 @@
     use Image\Router\Route;
 
     $route = new Route();
-    $route->echoHello();
+    $route->switchRoute($_SERVER["REQUEST_URI"], $_SERVER["REQUEST_METHOD"]);
