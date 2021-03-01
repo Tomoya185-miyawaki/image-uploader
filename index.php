@@ -3,4 +3,4 @@
     use Image\Router\Route;
 
     $route = new Route();
-    $route->routing();
+    $route->echoHello();
