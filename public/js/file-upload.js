@@ -4,7 +4,7 @@ $(function(){
   });
   $('#uploadFile').on('change', function () {
     $('.image-form').submit();
-    window.location.href = '/image/upload';
+    window.location.href = '/image-uploader/upload';
   });
 
   $('html').on('drop', function (e) {
@@ -42,7 +42,7 @@ $(function(){
       // ドラッグ＆ドロップでファイルアップロードする場合は result の内容を Ajax でサーバに送信しましょう!
       // $("#dropZone").text("[" + file.name + "]" + event.target.result);
       $.ajax({
-        url: '/image/upload',
+        url: '/image-uploader/upload',
         type: 'POST',
         data: event.target.result
       }).done(function() {
